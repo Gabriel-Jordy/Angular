@@ -1,0 +1,109 @@
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+.mapa{  
+text-align: center;
+
+}
+/* --------------- FOOTER -------------*/
+
+.footer{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color:black;
+    text-align: left;
+   
+    
+    
+}
+
+
+
+
+
+
+
+/*seleccion de usuario*/
+
+.fotos_circular img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+    border-radius: 50%;
+    border: solid 1px black;
+
+
+}
+
+.fotos_circular{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+    padding: 10px;
+}
+
+
+.uno{
+    padding: 20px;
+}
+
+.dos{
+    padding: 20px;
+}
+
+
+ 
+
+
+
