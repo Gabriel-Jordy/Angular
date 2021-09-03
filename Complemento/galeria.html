@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PASTELERIA ADMINISTRACION</title>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/usuarios-estilo.css" type="text/css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="css/principal-estilo.css" type="text/css"/>
+</head>
+
+
+ 
+
+<body>
+
+     <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" onclick="location.href='inventario.html'">HOME</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" onclick="location.href='galeria.html'">GALERIA</a></li>
+        <li><a href="#" onclick="location.href='conversor.html'">CONVERTIDOR</a></li>
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" onclick="location.href='login.html'"><span class="glyphicon glyphicon-user"></span> USUARIO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px;margin: 60px 0" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+</div>
+
+  <a2 onclick="myAccFunc2()" href2="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      INVENTARIO <i class="fa fa-caret-down"></i>
+    </a2>
+    <div2 id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+
+      <a2 href2="#" class="w3-bar-item w3-button w3-light-grey "onclick="location.href='usuarios.html'"><i2 class=""></i2>USUARIOS</a2>
+      <a2 href2="#" class="w3-bar-item w3-button w3-light-grey"onclick="location.href='productos.html'"><i2 class=""></i2>PRODUCTOS</a2>
+        <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="location.href='proveedores.html'"><i2 class=""></i2>PROVEEDORES</a>
+        <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="location.href='reportes.html'"><i2 class=""></i2>REPORTE</a>
+        <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="location.href='clientes.html'"><i2 class=""></i2>CLIENTES</a>
+      
+  </div2>
+  <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="location.href='inventario.html'"><i2 class=""></i2>VOLVER</a>
+</nav>
+ 
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">GALERIA</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  
+  <div class="w3-display-container w3-container">
+    <img src="./img/mitad.jpg" alt="pasteles" style="width:100%; height: 250px">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h2 class="w3-hide-small w3-text-black">PASTELES</h2>
+    </div>
+  </div>   
+  
+
+  <br><br>
+    <li class="w3-btn w3-green w3-text-black w3-ripple material-icons">add_box <a class= "w3-text-black" href="javascript:void(0)"  onclick="document.getElementById('newsletter').style.display='block'"><b>AÑADIR</b></a></li>
+
+   <li class="w3-btn w3-red w3-text-black w3-ripple material-icons">delete <a class= "w3-text-black" href="javascript:void(0)" ><b>BORRAR</b></a></li>
+
+  <br><br><br>  
+
+  <div id="principal">
+
+      
+      <section id="categorias">
+        <section class="uno">
+          <img src="img/pastel1.png" width="250" height="150" >
+          <h2>Pastel de fresas con crema</h2>
+          <p class="parrafo">
+            Bizcocho esponjoso bañado con miel de azúcar, almíbar de frutas y canela, relleno y decorado con crema láctea batida y fresas frescas. Pastel de 50 y 80 porciones. 
+
+
+          </p><br>
+          <a href="" class="leer-mas">Editar</a><br><br>
+        </section>
+        <section class="uno dos">
+          <img src="img/pastel2.png" width="250" height="150" >
+          <h2>Pastel selva negra</h2>
+          <p class="parrafo">
+            Bizcocho esponjoso de chocolate humecido con miel de guinda, relleno y cubierto de crema láctea batida con jalea natural de berries y decorado con guindas bañadas en chocolate. Pastel de 50 y 80 porciones.
+
+          </p><br>
+          <a href="" class="leer-mas">Editar</a><br><br>
+        </section>
+        <section class="uno">
+          <img src="img/pastel3.png" width="250" height="150" >
+          <h2>Pastel fresa melocotón</h2>
+          <p class="parrafo">
+            Bizcocho esponjoso bañado con miel de azúcar almíbar de frutas y canela. Relleno y decorado con crema láctea batida, fresas frescas y melocotones en almíbar. Pastel de 25, 50 y 80 porciones. 
+          </p><br>
+          <a href="" class="leer-mas">Editar</a><br><br>
+        </section>
+      </section> 
+
+      
+<section id="categorias">
+        <section class="uno">
+          <img src="img/pastel4.png" width="250" height="150" >
+          <h2>Pastel brownie y cajeta</h2>
+          <p class="parrafo">
+            Masa enriquecida de brownie, forrado con ganache de chocolate semi-amargo, decorado con besito de dulce de leche y arroz inflado bañado en chocolate. 
+
+          </p><br>
+          <a href="" class="leer-mas">Editar</a><br><br>
+        </section>
+        <section class="uno dos">
+          <img src="img/pastel5.png" width="250" height="150" >
+          <h2>Pastel zanahoria</h2>
+          <p class="parrafo">
+            Masa enriquecida con zanahoria rallada, coco , piña y nuez de nogal decorado con queso crema y mantequilla y almendra tostada. COMPRA YA!!!
+            <br><br><br>
+          </p><br>
+          <a href="" class="leer-mas">Editar</a><br><br>
+        </section>
+        <section class="uno">
+          <img src="img/pastel6.png" width="250" height="150" >
+          <h2>Pastel fresa mango y chocolate blanco</h2>
+          <p class="parrafo">
+            Bizcocho de vainilla humedecido con miel de almíbar, relleno y decorado con fresas, mango y chocolate blanco con crema batida 100% láctea Anchor. Pastel 25 porciones 
+          </p><br>
+          <a href="" class="leer-mas">Editar</a><br><br>
+        </section>
+      </section> 
+
+
+      <br>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+<script >
+// Accordion 2
+function myAccFunc2() {
+  var a = document.getElementById("demoAcc2");
+  if (a.className.indexOf("w3-show") == -1) {
+    a.className += " w3-show";
+  } else {
+    a.className = a.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

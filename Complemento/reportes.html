@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PASTELERIA ADMINISTRACION</title>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/usuarios-estilo.css" type="text/css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+
+ 
+
+<body>
+
+     <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" onclick="location.href='inventario.html'">HOME</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" onclick="location.href='galeria.html'">GALERIA</a></li>
+        <li><a href="#" onclick="location.href='conversor.html'">CONVERTIDOR</a></li>
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" onclick="location.href='login.html'"><span class="glyphicon glyphicon-user"></span> USUARIO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px;margin: 60px 0" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+</div>
+
+  <a2 onclick="myAccFunc2()" href2="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      INVENTARIO <i class="fa fa-caret-down"></i>
+    </a2>
+    <div2 id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+
+      <a2 href2="#" class="w3-bar-item w3-button w3-light-grey "onclick="location.href='usuarios.html'"><i2 class=""></i2>USUARIOS</a2>
+      <a2 href2="#" class="w3-bar-item w3-button w3-light-grey"onclick="location.href='productos.html'"><i2 class=""></i2>PRODUCTOS</a2>
+        <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="location.href='proveedores.html'"><i2 class=""></i2>PROVEEDORES</a>
+        <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="location.href='reportes.html'"><i2 class=""></i2>REPORTE</a>
+        <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="location.href='clientes.html'"><i2 class=""></i2>CLIENTES</a>
+      
+  </div2>
+  <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="location.href='inventario.html'"><i2 class=""></i2>VOLVER</a>
+</nav>
+ 
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">INVENTARIO</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  
+  <div class="w3-display-container w3-container">
+    <img src="./img/inventario2.jpg" alt="pasteles" style="width:100%; height: 550px">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h2 class="w3-hide-small w3-text-black">REPORTES</h2>
+    </div>
+  </div>   
+  
+
+  <br><br><br><br><br>
+
+  <li class="w3-btn w3-green w3-text-black w3-ripple material-icons">account_circle<a class= "w3-text-black" href="javascript:void(0)"  onclick="document.getElementById('newsletter').style.display='block'"><b>NUEVO </b></a></li>
+
+  
+  <li class="w3-btn w3-blue w3-text-black w3-ripple material-icons">search<a class= "w3-text-black" href="javascript:void(0)" ><b>BUSCAR</b></a></li>
+  <li class="w3-btn w3-yellow w3-text-black w3-ripple material-icons">print<a class= "w3-text-black" href="javascript:void(0)" ><b>IMPRIMIR</b></a></li>
+
+  <li class="w3-btn w3-red w3-text-black w3-ripple material-icons">delete<a class= "w3-text-black" href="javascript:void(0)" ><b>BORRAR</b></a></li>
+
+ </script>
+
+
+<div >
+
+<h3>REPORTES</h3>
+
+<table >
+  <thead>
+    <tr>
+      <th>EDIT</th>
+      <th>CODIGO</th>
+      <th>NOMBRE</th>
+      <th>MARCA</th>
+      <th>CATEGORIA</th>
+      <th>PROVEEDOR</th>
+      <th>EXISTENCIAS</th>
+      <th>PRECIO</th>
+      <th>FECHA</th>
+      <th>STATUS</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td>
+        <button class="btn" ng-click="editUser(user.id)">
+          <span class="glyphicon glyphicon-pencil"></span>  Edit
+        </button>
+      </td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+    <tr ng-repeat="">
+      <td>
+        <button class="btn" ng-click="editUser(user.id)">
+          <span class="glyphicon glyphicon-pencil"></span>  Edit
+        </button>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr ng-repeat="">
+      <td>
+        <button class="btn" ng-click="editUser(user.id)">
+          <span class="glyphicon glyphicon-pencil"></span>  Edit
+        </button>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+
+<script src= "myUsers.js"></script>
+
+    
+
+    
+ <br><br><br><br><br><br><br>
+   
+
+
+<!-------------- NUEVO USUARIO Newsletter Modal -------->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NUEVO USUARIO</h2>
+     <br>
+<button class="w3-btn w3-green w3-ripple" ng-click="editUser('new')">&#9998; Crear Nuevo Usuario</button>
+
+<form ng-hide="hideform">
+  
+  <h3 ng-hide="edit">Ingrese sus datos:</h3>
+    <label>CODIGO:</label>
+    <input class="w3-input w3-border" type="text" ng-model="lCodigo" ng-disabled="!edit" placeholder="Codigo">
+  <br>
+    <label>NOMBRE:</label>
+    <input class="w3-input w3-border" type="text" ng-model="fName" ng-disabled="!edit" placeholder="Nombre">
+  <br>
+    <label>MARCA:</label>
+    <input class="w3-input w3-border" type="text" ng-model="lmarca" ng-disabled="!edit" placeholder="Marca">
+  <br>
+  <label>CATEGORIA:</label>
+    <input class="w3-input w3-border" type="num" ng-model="lcategoria" ng-disabled="!edit" placeholder="Categoria">
+ <br>
+  <label>PROVEEDOR:</label>
+    <input class="w3-input w3-border" type="text" ng-model="lproveedor" ng-disabled="!edit" placeholder="Proveedor">
+  <br>
+
+  <label>EXISTENCIAS:</label>
+    <input class="w3-input w3-border" type="num" ng-model="1existencias" ng-disabled="!edit" placeholder="Existencia">
+  <br>
+
+    <label>PRECIO:</label>
+    <input class="w3-input w3-border" type="num" ng-model="lprecio" ng-disabled="!edit" placeholder="Precio">
+  <br>
+  <label>FECHA:</label>
+    <input class="w3-input w3-border" type="date" ng-model="lfecha" ng-disabled="!edit" placeholder="Fecha">
+  <br>
+    <label>STATUS:</label>
+    <input class="w3-input w3-border" type="text" ng-model="lstatus" ng-disabled="!edit" placeholder="Status">
+  <br>
+ <br>
+   
+<button class="w3-btn w3-green w3-ripple" ng-disabled="error || incomplete">&#10004; Aceptar</button>
+</form>
+
+
+
+
+</div>
+      
+    
+  </div>
+</div>
+
+
+
+
+
+<script >
+// Accordion 2
+function myAccFunc2() {
+  var a = document.getElementById("demoAcc2");
+  if (a.className.indexOf("w3-show") == -1) {
+    a.className += " w3-show";
+  } else {
+    a.className = a.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</form>
+</body>
+</html>
